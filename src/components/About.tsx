@@ -16,7 +16,7 @@ const features = [
   {
     icon: Rocket,
     title: 'Berteknologi',
-    description: 'Menggunakan teknologi terkini untuk hasil yang optimal.',
+    description: 'Menggunakan teknologi terkini untuk hasil yang optimal 2.',
   },
 ];
 
