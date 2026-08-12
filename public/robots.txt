@@ -1,0 +1,8 @@
+# robots.txt — AksaraProduction
+# https://aksaraproduction.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aksaraproduction.com/sitemap.xml
