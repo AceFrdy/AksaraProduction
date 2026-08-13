@@ -13,4 +13,4 @@ jobs:
           curl -f -X POST "${{ secrets.DOKPLOY_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \
             -H "X-GitHub-Event: push" \
-            -d '{"ref":"refs/heads/main","repository":{"full_name":"AceFrdy/Swarakarya"}}'
+            -d '{"ref":"refs/heads/main","repository":{"full_name":"AceFrdy/AksaraProduction"}}'
