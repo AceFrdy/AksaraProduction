@@ -89,15 +89,34 @@ export default function Hero() {
   return (
     <section
       id="beranda"
-      className="relative h-auto flex items-center overflow-hidden"
-      style={{ backgroundImage: "url('/assets/images/background.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+      className="relative h-auto flex items-center overflow-hidden bg-cover bg-[82%_center] md:bg-center"
+      style={{ backgroundImage: "url('/assets/images/background.png')", backgroundRepeat: 'no-repeat' }}
     >
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src="/assets/images/background.png" alt="hero background" className="absolute inset-0 w-full h-full object-cover" />
+        <img
+          src="/assets/images/background.png"
+          alt="hero background"
+          className="absolute inset-0 w-full h-full object-cover object-[82%_center] md:object-center"
+        />
         <div
           className="absolute inset-0"
           style={{ background: 'linear-gradient(180deg, rgba(11,10,9,0.65) 0%, rgba(24,18,15,0.15) 50%, rgba(11,10,9,0.85) 100%)' }}
+        />
+        {/* Mobile Edge Vignette Overlay */}
+        <div
+          className="absolute inset-0 pointer-events-none block md:hidden"
+          style={{
+            background: 'radial-gradient(circle at 75% 45%, rgba(11,10,9,0.15) 0%, rgba(11,10,9,0.65) 60%, rgba(11,10,9,0.94) 100%), linear-gradient(to right, rgba(11,10,9,0.75) 0%, rgba(11,10,9,0.3) 50%, transparent 100%)',
+            boxShadow: 'inset 0 0 70px 25px rgba(11,10,9,0.85)'
+          }}
+        />
+        {/* Desktop Edge Vignette Overlay */}
+        <div
+          className="absolute inset-0 pointer-events-none hidden md:block"
+          style={{
+            background: 'radial-gradient(circle at center, transparent 40%, rgba(11,10,9,0.6) 100%)',
+          }}
         />
       </div>
 
